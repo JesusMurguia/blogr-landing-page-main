@@ -65,6 +65,7 @@ header{
 a{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
+    font-weight: 500;
 }
 
 header a:hover, header a:focus, header a:active{
@@ -168,10 +169,10 @@ header a:hover, header a:focus, header a:active{
 #mobile-menu a{
     color: hsl(240, 10%, 16%);
 }
-/* 
+
 .hidden{
     display: none!important;
-} */
+} 
 
 .accordion{
     padding: 1.5 1.5em;
@@ -243,20 +244,24 @@ hr{
         padding-top: 3em;
         border-bottom-left-radius: 6em;
     }
-    
-.btn-login, .btn-learn{
-    color:rgba(255, 255, 255, 0.801);
-    font-weight: 400;
-}
+        
+    .btn-login, .btn-learn{
+        color:rgba(255, 255, 255, 0.801)!important;
+        font-weight: 600;
+    }
 
-.btn-signup, .btn-start{
-    color:var(--light-red);
-    font-weight: 700;
-    border-radius: 2em;
-    padding:.5em 1.5em;
-    background: var(--white)
-}
-    
+    .btn-signup, .btn-start{
+        color:var(--light-red);
+        font-weight: 700;
+        border-radius: 2em;
+        padding:.5em 1.5em;
+        background: var(--white)
+    }
+
+    #mobile-menu{
+        display: none;
+    }
+        
 }
     
 
