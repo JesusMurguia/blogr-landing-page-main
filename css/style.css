@@ -84,12 +84,34 @@ header{
 
 a{
     text-decoration: none;
-    color: hsl(0, 0%, 100%);
+    color: hsla(0, 0%, 100%, 0.815);
     font-weight: 500;
 }
 
+.dropdown-menu{
+    padding: 1em;
+}
+
+.dropdown-item:hover, .dropdown-item:focus, .dropdown-item:active{ 
+    color:hsl(240, 10%, 16%);
+    font-weight: 700;
+    text-decoration: none;
+    background: none;
+}
+
+.btn-signup:hover, .btn-signup:focus, .btn-signup:active, .btn-start:hover, .btn-start:focus, .btn-start:active{
+    background: hsla(0, 0%, 100%, 0.185);
+    color: white;
+}
+
+.btn-learn:hover, .btn-learn:focus, .btn-learn:active{
+    background: hsla(0, 0%, 100%);
+    color: var(--light-red)!important;
+}
+
 header a:hover, header a:focus, header a:active{
-    color: hsl(240, 2%, 79%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: underline;
 }
 .dropdown-toggle::after{
     position: relative;
@@ -353,6 +375,11 @@ li{
     margin-bottom: .5em;
 }
 
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 @media screen and (min-width: 768px){
@@ -465,6 +492,9 @@ li{
         padding:0;
     }
     
+    .dropdown:hover{
+        text-decoration: underline;
+    }
 
 
 }
