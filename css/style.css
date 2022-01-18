@@ -60,6 +60,15 @@ main{
     overflow-y: hidden;
 }
 
+footer{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
 header{
     background: url(../images/bg-pattern-intro-mobile.svg), linear-gradient(to right, hsl(13, 100%, 72%),hsl(353, 100%, 62%)) no-repeat;
     background-position: 35% 40%;
@@ -239,7 +248,7 @@ hr{
     background: hsla(240, 3%, 79%, 0.274);
 }
 
-#first-section{
+#first-section, #third-section{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -247,24 +256,25 @@ hr{
     text-align: center;
 }
 
-#first-section h2{
+#first-section h2, #third-section h2{
     padding: 0 .5em;
     color:hsl(208, 49%, 24%);
     margin-top:2em;
     font-weight: 700;
 }
 
-#first-section h1{
+#first-section h1, #third-section h1{
     color:hsl(208, 49%, 24%);
     font-weight: 700;
 }
-#first-section p{
-    color:hsl(240, 0%, 59%);
-    font-weight: 400;
+#first-section p, #third-section p{
+    color:hsl(208, 49%, 24%);
+    font-weight: 300;
     font-size: 1.01em;
     padding: 0 0em;
     margin-top:1em;
 }
+
 
 .second-text-section{
     display: flex;
@@ -277,11 +287,12 @@ hr{
     padding: 20% 8%;
 }
 
+
 #second-section{
     height: auto;
     background: url("../images/bg-pattern-circles.svg"), linear-gradient(to right, hsl(237, 17%, 21%),hsl(237, 23%, 32%));
     background-repeat: no-repeat;
-    background-position: 50% 150%;
+    background-position: 50% 125%;
     border-bottom-left-radius: 6em;
     border-top-right-radius: 6em;
     padding-bottom: 4em;
@@ -308,6 +319,40 @@ hr{
     padding: 0 5vw;
     text-align: center;
 }
+
+
+
+#third-section{
+    padding: 2em 2em;
+}
+
+footer{
+    text-align: center;
+    background-color: hsl(240, 10%, 16%);
+    padding: 4em 0;
+    border-top-right-radius: 6em;
+}
+
+footer img{
+    margin-bottom: 3em;
+}
+
+footer p{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding: 0 1.5em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    color: rgb(197, 197, 197);
+    margin-bottom: .5em;
+}
+
 
 
 @media screen and (min-width: 768px){
@@ -349,9 +394,14 @@ hr{
         display: none;
     }
 
-    #first-section{
+    #first-section, #third-section{
         text-align: left;
         padding: 10% 8%;
+        position: relative;
+    }
+
+    #third-section{
+        padding: 20% 8% 10% 8%;
         position: relative;
     }
 
@@ -361,14 +411,21 @@ hr{
         max-width: 60vw;
     }
 
+    #third-section img{
+        margin-top: -35%;
+        margin-left: -82%;
+        max-width: 64vw;
+        content: url("../images/illustration-laptop-desktop.svg");
+    }
+
+
     #illustration-img{
         content: url("../images/illustration-editor-desktop.svg");
     }
 
-    #first-section p{
+    #first-section p,#third-section p{
         padding: 0 1em;
     }
-
     #second-section{
         height: 25em;
         margin-top: 2em;
@@ -392,7 +449,24 @@ hr{
 
     #second-section img{
         margin-top: -4em;
+    } 
+
+    #third-section h2{
+        margin-top: 0em;
     }
+
+
+    footer{
+        padding: 4em;
+        text-align: left;
+    }
+
+    footer p {
+        padding:0;
+    }
+    
+
+
 }
     
 
