@@ -296,7 +296,6 @@ hr{
 
 #first-section h1{
     color:hsl(208, 49%, 24%);
-    
     font-weight: 700;
 }
 #first-section p{
@@ -306,15 +305,38 @@ hr{
 }
 
 #first-section img{
-    min-width: 20em;
     margin-bottom: 2em 0;
     padding: 0;
+}
+
+#second-section{
+    border-bottom-left-radius: 6em;
+    border-top-right-radius: 6em;
+    background: url("../images/bg-pattern-circles.svg"), linear-gradient(to right, hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+    background-position: -50% 80%;
+    background-repeat: no-repeat;
+}
+
+#second-section h1{
+    color:hsl(0, 0%, 100%);
+}
+
+#second-section p{
+    color:hsl(0, 0%, 100%);
+}
+      
+
+
+.second-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px){
     
     .first-text-section{
-        padding: 1vw 0vw 1vw 10vw;
+        padding: 1vw 0vw 1vw 1vw;
         text-align: left;
         max-width: 90em;
     }
@@ -324,10 +346,21 @@ hr{
     }
 
     #first-section{
-        padding: 8em 1em 20em 1em;
+        padding: 8em 1em 20em 10em;
         background: url("../images/illustration-editor-desktop.svg") no-repeat;
-        background-position:  55vw 3vh;
+        background-position:  65vw 3vh;
     }
+    #second-section img{
+        width: auto;
+        max-height: 125%;
+        margin-top: -5em;
+    }
+
+    #second-section{
+        height: 24em;
+    }
+    
+
 
 }
     
