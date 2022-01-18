@@ -57,6 +57,7 @@ main{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    overflow-y: hidden;
 }
 
 header{
@@ -237,6 +238,78 @@ hr{
 #mobile-menu a:active{
     background: hsla(240, 3%, 79%, 0.274);
 }
+
+#first-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#first-section h2{
+    padding: 0 .5em;
+    color:hsl(208, 49%, 24%);
+    margin-top:2em;
+    font-weight: 700;
+}
+
+#first-section h1{
+    color:hsl(208, 49%, 24%);
+    font-weight: 700;
+}
+#first-section p{
+    color:hsl(240, 0%, 59%);
+    font-weight: 400;
+    font-size: 1.01em;
+    padding: 0 0em;
+    margin-top:1em;
+}
+
+.second-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#first-section{
+    text-align: center;
+    padding: 20% 8%;
+}
+
+#second-section{
+    height: auto;
+    background: url("../images/bg-pattern-circles.svg"), linear-gradient(to right, hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+    background-repeat: no-repeat;
+    background-position: 50% 150%;
+    border-bottom-left-radius: 6em;
+    border-top-right-radius: 6em;
+    padding-bottom: 4em;
+    margin-top: 12em;
+}
+
+#second-section img{
+    margin-top: -12em;
+}
+
+#second-section h1{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 1em;
+    padding: 0 1em;
+    text-align: center;
+}
+
+#second-section p{
+    color: white;
+    font-weight: 300;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 5vw;
+    text-align: center;
+}
+
+
 @media screen and (min-width: 768px){
     .desktop-navbar{
         display: flex;
@@ -275,96 +348,53 @@ hr{
     #mobile-menu{
         display: none;
     }
-        
-}
-    
-#first-section{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2em 1em;
-    margin-top:2em;
-}
 
-#first-section h2{
-    padding: 0 .5em;
-    color:hsl(208, 49%, 24%);
-    margin-top:2em;
-}
-
-#first-section h1{
-    color:hsl(208, 49%, 24%);
-    font-weight: 700;
-}
-#first-section p{
-    color:hsl(240, 0%, 59%);
-    padding: 0 1.1em;
-    margin-top:1em;
-}
-
-#first-section img{
-    margin-bottom: 2em 0;
-    padding: 0;
-}
-
-#second-section{
-    border-bottom-left-radius: 6em;
-    border-top-right-radius: 6em;
-    background: url("../images/bg-pattern-circles.svg"), linear-gradient(to right, hsl(237, 17%, 21%),hsl(237, 23%, 32%));
-    background-position: -50% 80%;
-    background-repeat: no-repeat;
-}
-
-#second-section h1{
-    color:hsl(0, 0%, 100%);
-}
-
-#second-section p{
-    color:hsl(0, 0%, 100%);
-}
-      
-
-
-.second-text-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-@media screen and (min-width: 768px){
-    
-    .first-text-section{
-        padding: 1vw 0vw 1vw 1vw;
+    #first-section{
         text-align: left;
-        max-width: 90em;
+        padding: 10% 8%;
+        position: relative;
     }
 
     #first-section img{
-        display: none;
+        margin-top: -29%;
+        margin-left: 19%;
+        max-width: 60vw;
     }
 
-    #first-section{
-        padding: 8em 1em 20em 10em;
-        background: url("../images/illustration-editor-desktop.svg") no-repeat;
-        background-position:  65vw 3vh;
+    #illustration-img{
+        content: url("../images/illustration-editor-desktop.svg");
     }
-    #second-section img{
-        width: auto;
-        max-height: 125%;
-        margin-top: -5em;
+
+    #first-section p{
+        padding: 0 1em;
     }
 
     #second-section{
-        height: 24em;
+        height: 25em;
+        margin-top: 2em;
+        background: url("../images/bg-pattern-circles.svg"), linear-gradient(to right, hsl(237, 17%, 21%),hsl(237, 23%, 32%));
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-position: -50% 80%;
     }
-    
 
+    #second-section p{
+        padding-left: 6%;
+        padding-right: 20%;
+        text-align: start;
+    }
+    #second-section h1{
+        text-align: start;
+        margin-top: 3em;
+        padding-left: 6%;
+        padding-right: 7%;
+    }
 
+    #second-section img{
+        margin-top: -4em;
+    }
 }
     
-
 
 
 
